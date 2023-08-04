@@ -1,0 +1,42 @@
+<!DOCTYPE html><!--[ 김찬영  2023-08-1 오후 05:58:23 ]  -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="result.html">
+	<fieldset>
+		<legend>이름입력하기</legend>
+		<div>
+			<label for ="user_name">이름 : </label>
+			<input type="text" name="user_name" id="user_name"/>
+		</div>
+		<br/>
+		<div>
+			<input type="submit" value="입력완료" />
+			<input type="reset" value="초기화" />
+			<input type="button" onclick="javascript:location.href='result.html'" value="입력완료" />
+			<input type="image" src="../image/ok.png" width="30" height="20" alt="OK"/> <!-- 자동 submit  -->
+			<input type="image" src="../image/ok.png" width="30" height="20" alt="OK" onclick="return false;"/> 
+			<!-- 움직이는 동적은 javascript -->
+			<!-- <img src=""/> -->
+			<!-- <input type="image"/>  얘는 자동 서브밋 -->
+			
+			<!-- <input type="button" onclick=""/>  -->
+			<!-- <button>  얘는 자동서브밋-->
+		</div>
+	</fieldset>
+</form>
+</body>
+</html>
+<!--  
+submit ~ action
+- <form> 태그 아네 있는입력상자의 데이터를 들고 페이지 이동
+
+button ~ onclick 
+on이라는건 ~~할때 라는 말이얌.
+onclick 클릭할때 
+onchange 
+onload 화면 띄울때
+-->

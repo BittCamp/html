@@ -1,0 +1,58 @@
+<!DOCTYPE html><!--[ 김찬영  2023-08-1 오후 05:58:23 ]  -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> Cell 과 내용 사이의 여백 - cellpadding</h1>
+	<table border = "1" cellpadding="50">
+		<tr>
+			<td>1-1</td>
+			<td>1-2</td> <!-- 안쪽여백 padding 바깥쪽여백 margin  -->
+		</tr>
+	</table>
+	<hr>
+	
+	<h1>Cell과 Cell 사이의 여백 - cellspacing </h1>
+	<table border = "1" cellspacing="50">  
+		<tr>
+			<td>1-1</td>
+			<td>1-2</td>
+		</tr>
+	</table>
+	<hr>
+	
+	<table border="1" cellpadding="5" cellspacing="0"> <!-- cellspacing="0" 으로 하면 2줄이 아니라 1줄로 보임. -->
+		<tr>
+			<td>1-1</td>
+			<td>1-2</td>
+		</tr>
+		
+		<tr>
+			<td>2-1</td>
+			<td>2-2</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" align="center"> 3-1 </td>
+		</tr>
+		
+		<tr>
+			<td rowspan="2"> 
+				<a href="https://www.naver.com">
+					<img alt="없으면 이거나옴" src="../image/1.png" width="100" height="100" 
+					onclick="javascript:location.href='https://www.naver.com'"
+					style="cursor: pointer;"/> <!-- 커서의 모양이 포인터로 바꾸게 하기. -->
+				</a>
+				<!-- 길이를 조정해 주지 않는 한 한칸이 바뀌면 다른 칸도 따라서 바뀐다.  -->
+			</td>
+			<td>4-2</td>
+		</tr>
+		
+		<tr>
+			<td>5-2</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html><!--[ 김찬영  2023-08-1 오후 05:58:23 ]  -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+p{
+	border : 1px solid blue;		
+} /*  위에다 쓰는걸 더 좋아함. */
+</style>
+</head>
+<body>
+ 	<!-- 이미지 태그 사용법 -->
+ 	<p style="border: 1px solid red;"> <!-- 절대 번지 : 프로젝트명 부터 들어와서부터 쓰는것.  -->
+ 		<img src="http://localhost:8080/html5/image/1.png" alt="안나올때이거나옴" /> <!-- https 는 보안 때문에 못들어간다. -->
+ 		<!-- javaresources webapp이런건 자바가 만든거라 안써야된다. 내가만든폴더만 쓰면됨.  -->
+ 	</p> <!-- 우선권은 인라인 방식. --> 
+ 	<!-- 이미지 크기 지정 -->
+ 	<p style="border: 1px solid blue;"> <!-- 상대 번지 : 나를 기준으로 쓰는것..  -->
+ 			<img src="../image/1.png" width="50" height="50" alt="안나올때이거나옴" />
+ 		<a href="https://www.naver.com"> <!-- a 태그 href 네이버로 이동.  -->
+ 			<img src="../image/1.png" width="50" height="50" alt="안나올때이거나옴" />
+ 		</a> 
+ 	</p> 
+</body>
+</html>
